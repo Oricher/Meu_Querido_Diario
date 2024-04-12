@@ -19,10 +19,8 @@
 
 .titulo {
   position: absolute;
-  width: 360px;
-  height: 42px;
-  left: 725px;
-  top: 335px;
+  left: 40%;
+  top: 35%;
   
   font-family: 'Irish Grover';
   font-style: normal;

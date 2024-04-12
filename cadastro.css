@@ -1,47 +1,83 @@
-#titulo{
-    font-family: sans-serif;
-    color: #380B61;
-    margin-left: 7%;
-    
+/* Importe a fonte do seu Figma (opcional) */
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  /* Defina a fonte base aqui */
+  font-family: Arial, sans-serif;
 }
 
-#subtitulo{
-    font-family: sans-serif;
-    color: #380B61;
-    margin-left: 10%;
-}
-
-fieldset{
-    border: 0;
-}
-
-body{
-    background-color: #f0f8ff;
-    font-family: sans-serif;
-    font-size: 1em;
-    color: #59429d;
-    margin-left: 36%;
-    margin-top: 2%;
+.container {
+    display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("assets/fundo_madeira.png");
+    background-size: cover;
 }
 
-input, select, textarea, button{
+form {
+    display: flex;
+    flex-direction: column; /* Organiza os campos em coluna */
+    align-items: center; /* Centraliza os campos horizontalmente */
+    padding: 20px;
+    border: 1px solid #ccc;
     border-radius: 5px;
+    background-color: #fff; /* Cor de fundo do formulário */
+}
+
+.titulo {
+  /* Defina cor, tamanho e estilo do título */
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+}
+
+.livro {
+  /* Defina o tamanho e posicionamento da imagem */
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 .campo {
-    margin-bottom: 1em;
+  /* Estilos para os campos de entrada */
+  margin-bottom: 1em;
 }
 
-.campo label{
-    margin-bottom: 0.2em;
-    color: #59429d;
-    display: block;
+.campo label {
+  /* Estilos para os labels */
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
 }
 
-fieldset.grupo .campo{
-    float: left;
-    margin-right: 1em;
+.campo input {
+  /* Estilos para os campos de input */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
 }
 
-.campo input[type="text"], 
+.campo input:focus {
+  outline: none;
+  border-color: #999;
+}
+
+/* Estilos para o botão de submit (opcional) */
+.button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+.button:hover {
+  background-color: #0067cc;
+}
