@@ -9,32 +9,29 @@
 <body>
     
     <form>
-        
-        <fieldset>
-            <h2 class="container"></h2>
-            
+        <h1 class="titulo">Meu Querido Diário</h1>
+        <img class="livro" src="assets/livro_preto.png" alt="Livro">
+        <div class="container">
             <div class="campo">
-                <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome" required>
-            </div>
-
-            <div class="campo"> 
-                <label for="sobrenome">Sobrenome</label>
-                <input type="text" name="sobrenome" id="sobrenome" required>
-            </div>
-
-            <div class="campo">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" required>
-            </div>
-
-            <div class="campo">
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha" required>
-            </div>
-            <button type="submit">Cadastrar</button>
-
-        </fieldset>
+                <div class="lista">
+                    <label id="campo" for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" required>
+                </div> 
+                <div class="lista">       
+                    <label id="campo" for="sobrenome">Sobrenome:</label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div> 
+                <div class="lista">
+                    <label id="campo" for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>               
+                </div> 
+                <div class="lista">
+                    <label id="campo" for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" required>
+                </div>
+            </div>    
+            <button class="button" type="submit">Cadastrar</button>
+        </div>
     </form>
 
    

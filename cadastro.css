@@ -6,45 +6,22 @@ body {
   padding: 0;
   /* Defina a fonte base aqui */
   font-family: Arial, sans-serif;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-    background-image: url("assets/fundo_madeira.png");
-    background-size: cover;
-}
-
-form {
-    display: flex;
-    flex-direction: column; /* Organiza os campos em coluna */
-    align-items: center; /* Centraliza os campos horizontalmente */
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff; /* Cor de fundo do formulário */
-}
-
-.titulo {
-  /* Defina cor, tamanho e estilo do título */
-  color: #fff;
-  font-size: 2em;
-  text-align: center;
+  background-image: url("assets/fundo_madeira.png");
+  background-size: cover;
 }
 
 .livro {
-  /* Defina o tamanho e posicionamento da imagem */
-  width: 200px;
-  height: auto;
-  margin-bottom: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .campo {
   /* Estilos para os campos de entrada */
   margin-bottom: 1em;
+  position: absolute;
+  min-width: 300px;
 }
 
 .campo label {
@@ -76,8 +53,50 @@ form {
   border-radius: 5px;
   cursor: pointer;
   margin-top: 1em;
+  position: absolute;
+  top: 70%
 }
 
 .button:hover {
   background-color: #0067cc;
+}
+
+.livro {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.titulo {
+  position: absolute;
+  left: 40%;
+  top: 25%;
+  font-family: 'Irish Grover';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  z-index: 1;
+  color: #FFFFFF;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+}
+
+.campo #campo {
+  color: rgb(255, 255, 255);
+  margin: 0.5em;
+}
+
+.lista {
+  display: flex;
+  padding: 0.75em;
 }
