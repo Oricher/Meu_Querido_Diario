@@ -19,7 +19,7 @@ body {
 
 .campo {
   /* Estilos para os campos de entrada */
-  margin-bottom: 1em;
+  margin-bottom: .05em;
   position: absolute;
   min-width: 300px;
 }
@@ -33,9 +33,9 @@ body {
 
 .campo input {
   /* Estilos para os campos de input */
-  padding: 10px;
+  padding: 8px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 8px;
   width: 100%;
 }
 
@@ -70,8 +70,8 @@ body {
 
 .titulo {
   position: absolute;
-  left: 40%;
-  top: 25%;
+  left: 38%;
+  top: 18%;
   font-family: 'Irish Grover';
   font-style: normal;
   font-weight: 400;
@@ -98,5 +98,6 @@ body {
 
 .lista {
   display: flex;
-  padding: 0.75em;
+  padding: 0.8em;
+  
 }
